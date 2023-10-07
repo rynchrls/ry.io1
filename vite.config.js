@@ -7,5 +7,5 @@ export default defineConfig({
   server: {
     port: 3000,
   },
-  base: '/ry.io1/'
+  base: "/ry.io1/",
 })
