@@ -2,13 +2,13 @@ import React, { useState } from "react";
 import { useInView, motion, useAnimation, delay } from "framer-motion";
 import { Reveal, Reveal2 } from "./Reveal";
 import { useRef, useEffect, useReducer, useCallback } from "react";
-import sd from '../../public/websiteImage/school-dashboard.png'
+// import sd from '../websiteImage/school-dashboard.png'
 
 
 const ProjectsInformation = [
   {
       id: 1,
-      img: {sd},
+      img: '../../websiteImage/school-dashboard.png',
       title: 'ESKWELA',
       details: 'A school administration website can be set up to meet the needs of each institution in a personalized way. Thus, different accesses are created depending on the type of user (students, teachers, family, administration staff) to obtain specific functions according to the assigned role. In short, it provides an enclave for integral academic management. It is the best solution to have all the necessary technological tools in education in one place. ',
       reactjs: true,
@@ -132,7 +132,7 @@ function Project({proj, changeSkin}) {
                     animate={image}
                     transition={{ duration: 0.7, delay: 0.5 }}
                     src={proj.img}
-                    alt="dashboard"
+                    alt={proj.alt}
                     onClick={() => {
                       clickToOpen(proj.id, proj);
                     }}
