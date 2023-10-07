@@ -2,7 +2,73 @@ import React, { useState } from "react";
 import { useInView, motion, useAnimation, delay } from "framer-motion";
 import { Reveal, Reveal2 } from "./Reveal";
 import { useRef, useEffect, useReducer, useCallback } from "react";
-import { ProjectsInformation } from "../lib/projectInfo";
+import sd from '../../public/websiteImage/school-dashboard.png'
+
+
+const ProjectsInformation = [
+  {
+      id: 1,
+      img: '../../websiteImage/school-dashboard.png',
+      title: 'ESKWELA',
+      details: 'A school administration website can be set up to meet the needs of each institution in a personalized way. Thus, different accesses are created depending on the type of user (students, teachers, family, administration staff) to obtain specific functions according to the assigned role. In short, it provides an enclave for integral academic management. It is the best solution to have all the necessary technological tools in education in one place. ',
+      reactjs: true,
+      link: 'https://rynchrls.github.io/admin-dashboard/',
+      github: 'https://github.com/rynchrls/admin-dashboard',
+      class: 'proj1',
+      img2: '../../infoImage/eskwela.png',
+      alt: 'eskwela'
+
+  },
+  {
+      id: 2,
+      img: '../../websiteImage/movie.png',
+      title: 'PELICULA',
+      details: 'PELICULA was made to entertain audiences. In order to get visitors’ attention and encourage them to see the movie, PELICULA give them what they are looking for and provide some entertainment at the same time. This website make it easy to take a couple minutes and watch a few trailers before deciding which movie to see.',
+      reactjs: false,
+      class: 'proj5',
+      img2: '../../infoImage/pelicula.png',
+      alt: 'pelicula'
+  },
+  {
+      id: 3,
+      img: '../../websiteImage/ecoms.png',
+      title: 'ECOMMERCE',
+      details: 'ECOMMERCE allows people to buy and sell physical goods, services, and digital products over the internet rather than at a brick-and-mortar location. Through an e-commerce website, a business can process orders, accept payments, manage shipping and logistics, and provide customer service.',
+      reactjs: false,
+      github: 'https://github.com/rynchrls/ecommerce.guthub.io',
+      class: 'proj3',
+      img2: '../../infoImage/commerce.png',
+      alt: 'ecommerce'
+  },
+  {
+      id: 4,
+      img: '../../websiteImage/to-do.png',
+      title: 'TODOLIST',
+      details: 'This website I created has the authentication for each user, so that you can store all the things that you have done throughout the day,week,month and year. It allows user to freely assigned task for themselves to organize the time and effort for certain things, this application could help you to manage your time and be more productive within the said day.',
+      reactjs: false,
+      github: 'https://github.com/rynchrls/Todolist',
+      class: 'proj4',
+      img2: '../../infoImage/todo.png',
+      alt: 'todolist'
+  },
+  {
+      id: 5,
+      img: '../../websiteImage/commission.png',
+      title: 'COMMISION',
+      details: 'This was my first commission as a front-end web developer, I created this enrollment and log in form for my client having trouble of creating this dynamic webpages, with the help of my skills and experienced I managed to satisfy my client’s wants. And thankfully we had the great deal for that, I’m still open for more commissions just get in touch with me.',
+      reactjs: false,
+      class: 'proj2',
+      img2: '../../infoImage/comms.png',
+      alt: 'commission'
+  }
+
+]
+
+
+
+
+
+
 
 function Project({proj, changeSkin}) {
   const ref = useRef(null);
@@ -426,10 +492,3 @@ function Project({proj, changeSkin}) {
 
 export default Project;
 
-// const ProjectDetails = ({ openDetails, data }) => {
-
-//   console.log(data)
-
-//   return (
-//   );
-// };

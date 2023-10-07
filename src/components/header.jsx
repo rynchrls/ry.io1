@@ -1,6 +1,8 @@
 import React, { useEffect } from "react";
 import "../App.css";
 import { useState } from "react";
+import darkMode from '../../public/img/darkmode.png'
+import lightMode from '../../public/img/lightmode.png'
 
 function Header({ changeSkin, setChangeSkin }) {
   const [openWindow, setOpenWindow] = useState(false);
@@ -166,7 +168,7 @@ function Header({ changeSkin, setChangeSkin }) {
                       isLight: false,
                     }))
                   }
-                  src="../img/darkmode.png"
+                  src={darkMode}
                 />
               </div>
               <div
@@ -179,7 +181,7 @@ function Header({ changeSkin, setChangeSkin }) {
                       isLight: true,
                     }))
                   }
-                  src="../img/lightmode.png"
+                  src={lightMode}
                 />
               </div>
             </div>

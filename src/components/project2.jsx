@@ -2,7 +2,68 @@ import React, { useState } from "react";
 import { useInView, motion, useAnimation, delay } from "framer-motion";
 import { Reveal, Reveal2 } from "./Reveal";
 import { useRef, useEffect, useReducer, useCallback } from "react";
-import { ProjectsInformation2 } from "../lib/projectInfo";
+
+
+
+const ProjectsInformation2 = [
+  {
+      id: 6,
+      img: '../../websiteImage/crypto.png',
+      title: 'Crypto Coins',
+      details: 'This is a coin tracker, by just searching crypto coins name, you can see its market value and the equivalent to US dollars. I work with an API to build this fantastic application, This has also a dark and light mode feature so it fits aesthetically, When you click the coins you will redirect to a page that has the details I attached for the least information you can gather on it.',
+      reactjs: true,
+      link: 'https://rynchrls.github.io/crypto-tracker/',
+      github: 'https://github.com/rynchrls/crypto-tracker',
+      img2: '../../infoImage/crypto.png',
+      alt: 'crypto coins',
+      class: 'proj6'
+
+  },
+  {
+      id: 7,
+      img: '../../websiteImage/la-mountains.png',
+      title: 'Los Angeles Mountains',
+      details: 'A static webpage for the promotion of LA mountains, I used basic html css and javascript for this application.',
+      reactjs: false,
+      img2: '../../infoImage/mounts.png',
+      alt: 'LA Mountains',
+      class: 'proj7'
+  },
+  {
+      id: 8,
+      img: '../../websiteImage/nike.png',
+      title: 'Nike Landing Page',
+      details: 'This is the landing page I created for nike, but that’s not all about static page because, I rendered a 3d model on this application, that animates throughout the sections, It will animate accordingly. If you want to try just click the link try button below.',
+      reactjs: true,
+      link: 'https://rynchrls.github.io/nike/',
+      github: 'https://github.com/rynchrls/nike',
+      img2: '../../infoImage/nyek.png',
+      alt: 'nike',
+      class: 'proj8'
+  },
+  {
+      id: 9,
+      img: '../../websiteImage/tenz.png',
+      title: 'Tenzies',
+      details: 'This was my first game application I created using reactjs, This game includes your strategy because, you need to click the roll button to show random number for each box, and For you to win you need the boxes to show all same number, This was a fun game and stress free.',
+      reactjs: true,
+      img2: '../../infoImage/tenzis.png',
+      alt: 'tenzies',
+      class: 'proj9'
+  },
+  {
+      id: 10,
+      img: '../../websiteImage/weather-app.png',
+      title: 'WEDDIE',
+      details: 'This is weather tracker application, It allows the user to search about current weather on certain place in our world, by just searching a specific place you can see the detail of weather for the said place. I also used API to create this application to enable the features of weather on each places that is visible to us.',
+      reactjs: true,
+      link:'https://rynchrls.github.io/weather-app/',
+      github: 'https://github.com/rynchrls/weather-app',
+      img2: '../../infoImage/weddie.png',
+      alt: 'weddie',
+      class: 'proj10'
+  }
+]
 
 function Project2({changeSkin}) {
   const ref = useRef(null);

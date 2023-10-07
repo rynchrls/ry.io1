@@ -49,7 +49,7 @@ function Hero({ changeSkin, setChangeSkin }) {
         ) : (
           <img src={three} className="layer" datatype="5" />
         )}
-        <img src="../img/css.png" className="layer layer2" datatype="2" />
+        <img src={css} className="layer layer2" datatype="2" />
         {window.innerWidth <= "600" ? (
           ""
         ) : (
