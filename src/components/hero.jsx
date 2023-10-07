@@ -1,5 +1,17 @@
 import React, { useEffect, useState } from "react";
 import Header from "./header";
+import ers from '../../public/img/ers.png'
+import three from '../../public/img/3.png'
+import css from '../../public/img/css.png'
+import five from '../../public/img/5.png'
+import db from '../../public/img/db.png'
+import seven from '../../public/img/7.png'
+import json from '../../public/img/json.png'
+import six from '../../public/img/6.png'
+import npm from '../../public/img/npm.png'
+import ten from '../../public/img/10.png'
+import rec from '../../public/img/react.png'
+import twelve from '../../public/img/12.png'
 
 function Hero({ changeSkin, setChangeSkin }) {
   useEffect(() => {
@@ -31,41 +43,41 @@ function Hero({ changeSkin, setChangeSkin }) {
     <section className={`hero ${changeSkin.isLight ? "hero-lightmode" : ""}`}>
       <Header changeSkin={changeSkin} setChangeSkin={setChangeSkin} />
       <section className="hero-wrapper">
-        <img src="../img/ers.png" className="layer layer1" datatype="-5" />
+        <img src={ers} className="layer layer1" datatype="-5" />
         {window.innerWidth <= "600" ? (
           ""
         ) : (
-          <img src="../img/3.png" className="layer" datatype="5" />
+          <img src={three} className="layer" datatype="5" />
         )}
         <img src="../img/css.png" className="layer layer2" datatype="2" />
         {window.innerWidth <= "600" ? (
           ""
         ) : (
-          <img src="../img/5.png" className="layer" datatype="6" />
+          <img src={five} className="layer" datatype="6" />
         )}
-        <img src="../img/db.png" className="layer layer3" datatype="8" />
+        <img src={db} className="layer layer3" datatype="8" />
         {window.innerWidth <= "600" ? (
           ""
         ) : (
-          <img src="../img/7.png" className="layer" datatype="-2" />
+          <img src={seven} className="layer" datatype="-2" />
         )}
-        <img src="../img/json.png" className="layer layer4" datatype="4" />
+        <img src={json} className="layer layer4" datatype="4" />
         {window.innerWidth <= "600" ? (
           ""
         ) : (
-          <img src="../img/6.png" className="layer" datatype="-9" />
+          <img src={six} className="layer" datatype="-9" />
         )}
-        <img src="../img/npm.png" className="layer layer5" datatype="6" />
+        <img src={npm} className="layer layer5" datatype="6" />
         {window.innerWidth <= "600" ? (
           ""
         ) : (
-          <img src="../img/10.png" className="layer" datatype="-7" />
+          <img src={ten} className="layer" datatype="-7" />
         )}
-        <img src="../img/react.png" className="layer layer6" datatype="-5" />
+        <img src={rec} className="layer layer6" datatype="-5" />
         {window.innerWidth <= "600" ? (
           ""
         ) : (
-          <img src="../img/12.png" className="layer" datatype="5" />
+          <img src={twelve} className="layer" datatype="5" />
         )}
         <div className="hero-context layer" datatype="2">
           <h2 className={`title ${changeSkin.isLight ? "light-h2" : ""}`}>
