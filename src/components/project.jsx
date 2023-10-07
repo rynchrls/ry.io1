@@ -8,7 +8,7 @@ import sd from '../../public/websiteImage/school-dashboard.png'
 const ProjectsInformation = [
   {
       id: 1,
-      img: '../../websiteImage/school-dashboard.png',
+      img: {sd},
       title: 'ESKWELA',
       details: 'A school administration website can be set up to meet the needs of each institution in a personalized way. Thus, different accesses are created depending on the type of user (students, teachers, family, administration staff) to obtain specific functions according to the assigned role. In short, it provides an enclave for integral academic management. It is the best solution to have all the necessary technological tools in education in one place. ',
       reactjs: true,
