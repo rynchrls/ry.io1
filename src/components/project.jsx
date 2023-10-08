@@ -2,8 +2,17 @@ import React, { useState } from "react";
 import { useInView, motion, useAnimation, delay } from "framer-motion";
 import { Reveal, Reveal2 } from "./Reveal";
 import { useRef, useEffect, useReducer, useCallback } from "react";
-import sd from '../../public/websiteImage/school-dashboard.png'
-import movie from '../../public/websiteImage/movie.png'
+import sd from '/websiteImage/school-dashboard.png'
+import movie from '/websiteImage/movie.png'
+import ecoms from '/websiteImage/ecoms.png'
+import todo from '/websiteImage/to-do.png'
+import commission from '/websiteImage/commission.png'
+import eskwela from '/public/infoImage/eskwela.png'
+import pelicula from '/public/infoImage/pelicula.png'
+import commerce from '/public/infoImage/commerce.png'
+import todo2 from '/public/infoImage/todo.png'
+import comms from '/public/infoImage/comms.png'
+
 
 
 const ProjectsInformation = [
@@ -16,7 +25,7 @@ const ProjectsInformation = [
       link: 'https://rynchrls.github.io/admin-dashboard/',
       github: 'https://github.com/rynchrls/admin-dashboard',
       class: 'proj1',
-      img2: '../../infoImage/eskwela.png',
+      img2: `${eskwela}`,
       alt: 'eskwela'
 
   },
@@ -27,41 +36,41 @@ const ProjectsInformation = [
       details: 'PELICULA was made to entertain audiences. In order to get visitors’ attention and encourage them to see the movie, PELICULA give them what they are looking for and provide some entertainment at the same time. This website make it easy to take a couple minutes and watch a few trailers before deciding which movie to see.',
       reactjs: false,
       class: 'proj5',
-      img2: '../../infoImage/pelicula.png',
+      img2: `${pelicula}`,
       alt: 'pelicula'
   },
-  // {
-  //     id: 3,
-  //     img: '../../websiteImage/ecoms.png',
-  //     title: 'ECOMMERCE',
-  //     details: 'ECOMMERCE allows people to buy and sell physical goods, services, and digital products over the internet rather than at a brick-and-mortar location. Through an e-commerce website, a business can process orders, accept payments, manage shipping and logistics, and provide customer service.',
-  //     reactjs: false,
-  //     github: 'https://github.com/rynchrls/ecommerce.guthub.io',
-  //     class: 'proj3',
-  //     img2: '../../infoImage/commerce.png',
-  //     alt: 'ecommerce'
-  // },
-  // {
-  //     id: 4,
-  //     img: '../../websiteImage/to-do.png',
-  //     title: 'TODOLIST',
-  //     details: 'This website I created has the authentication for each user, so that you can store all the things that you have done throughout the day,week,month and year. It allows user to freely assigned task for themselves to organize the time and effort for certain things, this application could help you to manage your time and be more productive within the said day.',
-  //     reactjs: false,
-  //     github: 'https://github.com/rynchrls/Todolist',
-  //     class: 'proj4',
-  //     img2: '../../infoImage/todo.png',
-  //     alt: 'todolist'
-  // },
-  // {
-  //     id: 5,
-  //     img: '../../websiteImage/commission.png',
-  //     title: 'COMMISION',
-  //     details: 'This was my first commission as a front-end web developer, I created this enrollment and log in form for my client having trouble of creating this dynamic webpages, with the help of my skills and experienced I managed to satisfy my client’s wants. And thankfully we had the great deal for that, I’m still open for more commissions just get in touch with me.',
-  //     reactjs: false,
-  //     class: 'proj2',
-  //     img2: '../../infoImage/comms.png',
-  //     alt: 'commission'
-  // }
+  {
+      id: 3,
+      img: `${ecoms}`,
+      title: 'ECOMMERCE',
+      details: 'ECOMMERCE allows people to buy and sell physical goods, services, and digital products over the internet rather than at a brick-and-mortar location. Through an e-commerce website, a business can process orders, accept payments, manage shipping and logistics, and provide customer service.',
+      reactjs: false,
+      github: 'https://github.com/rynchrls/ecommerce.guthub.io',
+      class: 'proj3',
+      img2: `${commerce}`,
+      alt: 'ecommerce'
+  },
+  {
+      id: 4,
+      img: `${todo}`,
+      title: 'TODOLIST',
+      details: 'This website I created has the authentication for each user, so that you can store all the things that you have done throughout the day,week,month and year. It allows user to freely assigned task for themselves to organize the time and effort for certain things, this application could help you to manage your time and be more productive within the said day.',
+      reactjs: false,
+      github: 'https://github.com/rynchrls/Todolist',
+      class: 'proj4',
+      img2: `${todo2}`,
+      alt: 'todolist'
+  },
+  {
+      id: 5,
+      img: `${commission}`,
+      title: 'COMMISION',
+      details: 'This was my first commission as a front-end web developer, I created this enrollment and log in form for my client having trouble of creating this dynamic webpages, with the help of my skills and experienced I managed to satisfy my client’s wants. And thankfully we had the great deal for that, I’m still open for more commissions just get in touch with me.',
+      reactjs: false,
+      class: 'proj2',
+      img2: `${comms}`,
+      alt: 'commission'
+  }
 
 ]
 
