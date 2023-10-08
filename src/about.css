@@ -1949,8 +1949,9 @@ button {
     padding-left: 5rem;
     height: auto;
     transform: translateY(150px);
-    flex-direction: column;
+    flex-direction: column-reverse;
     align-items: flex-start;
+    gap: 3rem;
   }
   .contact-left {
     width: 100%;
@@ -1958,6 +1959,7 @@ button {
   .contact-right {
     padding: 0;
     width: 100%;
+    text-align: left;
   }
   /* .input-wrapper {
     display: flex;
@@ -1976,6 +1978,9 @@ button {
   .message-input textarea {
     height: auto;
     padding: .5rem;
+}
+.contact-right h2 {
+  margin-bottom: 1rem;
 }
 
 
