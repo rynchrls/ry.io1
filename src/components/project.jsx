@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { useInView, motion, useAnimation, delay } from "framer-motion";
 import { Reveal, Reveal2 } from "./Reveal";
 import { useRef, useEffect, useReducer, useCallback } from "react";
-// import sd from '../websiteImage/school-dashboard.png'
+import sd from '../../public/websiteImage/school-dashboard.png'
 
 
 const ProjectsInformation = [

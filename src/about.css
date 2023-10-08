@@ -1956,7 +1956,7 @@ button {
     width: 100%;
   }
   .contact-right {
-    padding-left: 2rem;
+    padding: 0;
     width: 100%;
   }
   /* .input-wrapper {
@@ -1964,8 +1964,18 @@ button {
     align-items: center;
     gap: 4rem;
   } */
+  .email-input {
+    margin-bottom: 1rem;
+  }
+  .message-input {
+    margin-bottom: 1rem;
+  }
+  .email-input input {
+    padding: 0.5rem;
+  }
   .message-input textarea {
     height: auto;
+    padding: .5rem;
 }
 
 
